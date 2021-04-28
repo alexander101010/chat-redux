@@ -20,7 +20,7 @@ const initialState = {
   channels: ["general", "react", "paris", "amsterdam"],
   selectedChannel: "general",
   currentUser:
-    prompt("What is your username?") ||
+    // prompt("What is your username?") || // comment out so i don't get prompted every page load in development
     `anonymous${Math.floor(10 + Math.random() * 90)}`,
 };
 

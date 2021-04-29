@@ -17,7 +17,12 @@ class ChannelList extends Component {
 
   renderChannel = (channel) => {
     return (
-      <li key={channel} onClick={() => this.handleClick(channel)}>
+      <li
+        key={channel}
+        className={channel === this.props.selectedChannel ? "active" : null}
+        onClick={() => this.handleClick(channel)}
+        role="presentation"
+      >
         #{channel}
       </li>
     );
